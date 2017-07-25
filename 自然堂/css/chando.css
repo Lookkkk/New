@@ -1,0 +1,233 @@
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.first_line, .second_line, .third_line {
+    width: 100%;
+    height: 33.33%;
+    position: absolute;
+    white-space: nowrap;
+}
+.second_line{
+    top: 33.33%;
+}
+.third_line{
+    top: 66.66%;
+}
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9{
+    height: 100%;
+    width: 33.33%;
+    position: absolute;
+    /*visibility: visible;*/
+    overflow: hidden;
+}
+.img2, .img5, .img8{
+    /*width: 33.33%;*/
+    left: 33.33%;
+}
+.img3, .img6, .img9{
+    /*width: 33.33%;*/
+    left: 66.66%;
+}
+.nana,.tfboys,.xueshan,.sunyi,.liying, .ximiannai,.club,.shiyong,.img_img1{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    margin-top: -50%;
+    margin-left: -50%;
+    /*z-index: 0;*/
+    /*border: 0;*/
+}
+
+
+/*零碎的小块 img5 根 img8*/
+.img5{
+    position: absolute;
+    background-color:#00a77b ;
+}
+.img5 h1 {
+    text-align: center;
+    height: 50%;
+    position: relative;
+    font-size: 12px;
+    line-height: 14px;
+}
+.img5 h1 img{
+    position: relative;
+    top: 60%;
+    width: 40%;
+
+}
+.img5 h1{
+    text-align: center;
+    height: 50%;
+}
+.copyright{
+    bottom: 17px;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+    letter-spacing: 0.5px;
+    line-height: 14px;
+}
+.copyright a{
+    text-decoration: none;
+    color: #fff;
+}
+.copyright span{
+    font-size: 11px;
+    left: -2px
+}
+.copyright-link{
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+.copyright-link a{
+    color: #fff;
+}
+
+.buttons_bar{
+    position: absolute;
+    display: inline-block;
+    bottom: -80px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    height: 34px;
+    font-size: 0;
+}
+.im1,.im2,.im3,.im4,.im5,.im6{
+    height: 100%;
+}
+
+.img5:hover .buttons_bar{
+    bottom:16px;
+}
+
+.img5:hover .copyright {
+    display: none;
+}
+.im1:active .qrcode{
+    display: block;
+}
+.qrcode,#search_input,.search_submit,.search_bg{
+    display: none;
+}
+.xiahuaxian{
+    text-decoration: underline;
+}
+/*图片8*/
+/*.club{*/
+    /*z-index: -1;*/
+/*}*/
+.img8:hover .club{
+    display: block;
+    transform: rotateY(360deg);
+    transition: all 1s;
+}
+.img8:hover .img_img1{
+    display: none;
+}
+
+
+
+/*所有的视频效果*/
+ #video1, #video2, #video4, #video6, #video7, #video9{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    margin-top: -50%;
+    margin-left: -50%;
+    object-fit: contain;
+     /*第一个参数：动画名*/ /*第1个参数：动画名*/ /*第2个参数：执行动画需要多久*/ /*第3个参数：延迟开机（默认是0）*/  /*第4个参数：运动曲线  第5个：是否循环播放（默认是不循环） 第6个：停在哪一帧（both：停在最后一帧）*/
+     animation: fadeIn 2s both;
+}
+
+.baseline{
+    position: absolute;
+    left: 30px;
+    top: 25%;
+    font-size: 12px;
+    z-index: 0;
+}
+
+.img1 a:hover .nana,.img3 a:hover .xuehsan,.img4 a:hover .sunyi,.img6 a:hover .liying{
+    display: none;
+}
+
+.img1:hover video,.img3:hover video,.img4:hover video,.img6:hover video,.img7:hover video,.img9:hover video{
+    display: block;
+}
+.img2:hover .baseline{
+    display: none;
+}
+.img8:hover .baseline{
+    display: none;
+}
+
+.menu{
+    width: 100%;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    opacity: 0.5;
+    padding: 2% 0;
+    background: #f6f5f5;
+    display: none;
+}
+.menu li{
+    font-size: 12px;
+    line-height: 14px;
+    bottom: 0;
+    padding: 0 10px;
+    display: inline-block;
+    border-right: 1px solid #000;
+    text-decoration: none;
+}
+.menu .last{
+    border: none;
+}
+.menu a{
+    text-decoration: none;
+    color: #000;
+    font-size: 8px;
+}
+.img3:hover .menu,.img6:hover .menu{
+    display: block;
+}
+
+/*end*/
+
+/*文字内容*/
+.baseline a{
+    font-size: 24px;
+    margin-top: 12px;
+    color:#000;
+    font-weight: 100;
+    font-family: monospace;
+}
+.baseline span{
+    display: block;
+    color: #00a77b;
+    font-size: 13.33px;
+}
+
+
+
+
